@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/v3-num.svg)](https://badge.fury.io/js/v3-num)
+
 A Vue 3 headless component to formatting numbers using Intl.numberFormat.
 
 > Warning: the `v3-num` tend to use Intl.numberFormat API internally. It is made for modern browsers, but if you want to keep things also working for older ones, make sure to polyfill the Intl API
@@ -39,7 +41,7 @@ Basic decimal formatter.
 
 ```vue
 <template>
-  <v-num #="{ number }" :value="1000" round>
+  <v-num #="{ number }" :value="1000">
     {{ number }}
   </v-num>
 </template>
