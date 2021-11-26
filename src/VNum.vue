@@ -9,7 +9,7 @@ export default defineComponent({ name: "VNum" });
 </script>
 
 <script setup lang="ts">
-import { withDefaults, ref, defineProps, watch } from "vue";
+import { withDefaults, ref, watch } from "vue";
 
 import { omit, omitBy } from "./utils";
 
