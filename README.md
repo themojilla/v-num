@@ -1,13 +1,11 @@
-# v-num
-
 A Vue 3 headless component to formatting numbers using Intl.numberFormat.
 
-> Warning: the `v-num` tend to use Intl.numberFormat API internally. It is made for modern browsers, but if you want to keep things also working for older ones, make sure to polyfill the Intl API
+> Warning: the `v3-num` tend to use Intl.numberFormat API internally. It is made for modern browsers, but if you want to keep things also working for older ones, make sure to polyfill the Intl API
 
 ## Installation
 
 ```bash
-yarn add v-num
+yarn add v3-num
 ```
 
 ## Usage
@@ -16,7 +14,7 @@ yarn add v-num
 
 ```js
 import { createApp } from "vue";
-import VNum from "v-num";
+import VNum from "v3-num";
 
 createApp.use(VNum);
 ```
@@ -31,7 +29,7 @@ createApp.use(VNum);
 </template>
 
 <script setup>
-import VNum from "v-num";
+import VNum from "v3-num";
 </script>
 ```
 
@@ -47,7 +45,7 @@ Basic decimal formatter.
 </template>
 
 <script setup>
-import VNum from "v-num";
+import VNum from "v3-num";
 </script>
 ```
 
@@ -69,7 +67,7 @@ Make the value rounded to the nearest integer.
 </template>
 
 <script setup>
-import VNum from "v-num";
+import VNum from "v3-num";
 </script>
 ```
 
@@ -97,7 +95,7 @@ Percentage formatting
 </template>
 
 <script setup>
-import VNum from "v-num";
+import VNum from "v3-num";
 </script>
 ```
 
