@@ -1,0 +1,49 @@
+{
+  "name": "v-num",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vue-tsc --declaration --emitDeclarationOnly",
+    "serve": "vite preview",
+    "prepare": "husky install",
+    "release": "release-it"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "@types/node": "^16.11.10",
+    "@vitejs/plugin-vue": "^1.9.3",
+    "husky": "^7.0.2",
+    "release-it": "*",
+    "typescript": "^4.4.3",
+    "vite": "^2.6.4",
+    "vue": "^3.2.16",
+    "vue-tsc": "^0.29.6"
+  },
+  "main": "./dist/v-num.umd.js",
+  "module": "./dist/v-num.es.js",
+  "unpkg": "./dist/v-num.iife.js",
+  "jsdelivr": "./dist/v-num.iife.js",
+  "typings": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/v-num.es.js",
+      "require": "./dist/v-num.umd.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "vue3",
+    "v-number",
+    "vue-number",
+    "vue-number-formatter"
+  ],
+  "author": "themojilla <the.mojilla@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/themojilla/v-num"
+  },
+  "repository": "https://github.com/themojilla/v-num"
+}
