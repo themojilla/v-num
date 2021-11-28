@@ -85,7 +85,7 @@ Percentage formatting
 
 ```vue
 <template>
-  <num
+  <v-num
     #="{ number }"
     :value="17.5678 / 100"
     number-style="percent"
@@ -93,7 +93,7 @@ Percentage formatting
     sign-display="always"
   >
     {{ number }}
-  </num>
+  </nv-um>
 </template>
 
 <script setup>
